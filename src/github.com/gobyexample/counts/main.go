@@ -1,15 +1,22 @@
 package main
 
 import (
-	"github.com/gobyexample/datafile"
 	"fmt"
 	"log"
+
+	"github.com/gobyexample/datafile"
 )
 
-func main(){
+func main() {
 	lines, err := datafile.GetString("E:\\data.txt")
-	if err != nil{
+	if err != nil {
 		log.Fatal(err)
 	}
-	fmt.Println(lines)
+	// counts := make(map[string]int)
+	for _, line := range(lines) {
+		fmt.Println(line)
+	}
+	// for key, value := range(counts) {
+	// 	fmt.Println("Name:",key,"value:",value)
+	// }
 }

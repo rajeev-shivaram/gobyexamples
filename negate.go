@@ -2,13 +2,11 @@
 
 package main
 
-import ("fmt")
-
 func negate(b *bool) bool {
 	return !(*b)
 }
 
-func main(){
-	b := true
-	fmt.Println("Negative of b is", negate(&b))
-}
+// func main(){
+// 	b := true
+// 	fmt.Println("Negative of b is", negate(&b))
+// }

@@ -16,7 +16,7 @@ func getDoublePointers(i *int) int {
 	return 2 * *i
 }
 
-func main() {
+func main1() {
 	i := 5
 	fmt.Println("before non passbyvalue i.e pass by reference")
 	fmt.Println("New values is", getDoubles(i))
